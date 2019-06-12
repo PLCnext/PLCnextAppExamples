@@ -1,0 +1,20 @@
+{
+    "plcnextapp": {
+        "name": "Wbm Component App",
+        "identifier": "WbmComponentApp",
+        "version": "123.456data",
+        "target": "AXC F 2152",
+        "minfirmware_version": "19.0.0",
+        "manufacturer": "PhoenixContact"
+    },
+    "datastorage": {
+        "persistentdata": true,
+        "temporarydata" : false
+    },
+    "plcnextextensions" :
+    [
+        {
+            "acfconfigpath": "/wbm/WbmComponent.acf.config"
+        }
+    ]
+}

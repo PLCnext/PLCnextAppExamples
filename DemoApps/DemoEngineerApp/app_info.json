@@ -1,0 +1,13 @@
+{
+    "plcnextapp": {
+        "name": "EngineerApp AXIO",
+        "identifier": "EngineerApp_AXIO",
+        "version": "123.456data",
+        "target": "AXC F 2152",
+        "minfirmware_version": "19.0.0",
+        "manufacturer": "PhoenixContact"
+    },
+    "engineerapp": {
+        "folder": "/arp/PCWE/"
+    }
+}

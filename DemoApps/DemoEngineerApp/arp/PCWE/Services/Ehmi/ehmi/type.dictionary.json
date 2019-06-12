@@ -1,0 +1,1 @@
+{"$schema":"http:\/\/json-schema.org\/draft-0\/schema#","title":"TypeDictionary","Types":[{"Name":"DINT","RuntimeType":"System.Int32","RuntimeSize":4,"RuntimeAlignment":4,"Kind":"Elementary"},{"Name":"BOOL","RuntimeType":"System.Boolean","RuntimeSize":1,"RuntimeAlignment":1,"Kind":"Elementary"}]}

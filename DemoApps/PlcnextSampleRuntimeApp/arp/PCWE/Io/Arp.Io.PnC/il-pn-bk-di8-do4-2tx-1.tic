@@ -1,0 +1,1802 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TIC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.phoenixcontact.com/IMA/TIC/1.0/tic.xsd">
+  <E n="PN:D">
+    <AL>
+      <A n="DeviceId">
+        <V>10</V>
+      </A>
+      <A n="VendorId">
+        <V>176</V>
+      </A>
+      <A n="IP">
+        <V>192.168.1.2</V>
+      </A>
+      <A n="DnsName">
+        <V>il-pn-bk-di8-do4-2tx-1</V>
+      </A>
+      <A n="SubnetMask">
+        <V>255.255.255.0</V>
+      </A>
+      <A n="Gateway">
+        <V>192.168.1.1</V>
+      </A>
+      <A n="ARType">
+        <V>IO_AR_SINGLE</V>
+      </A>
+      <A n="ARUID">
+        <V>1</V>
+      </A>
+      <A n="ARUUID">
+        <V>ca99c98f-4630-4c04-8816-54680a562c9e</V>
+      </A>
+      <A n="SupervisorTakeoverAllowed">
+        <V>false</V>
+      </A>
+      <A n="CfgDiff">
+        <V>true</V>
+      </A>
+      <A n="LogConnectionState">
+        <V>1</V>
+      </A>
+      <A n="IgnoreFailsafe">
+        <V>false</V>
+      </A>
+      <A n="IPOverDNS">
+        <V>false</V>
+      </A>
+      <A n="StartAR">
+        <V>true</V>
+      </A>
+      <A n="StartupMode">
+        <V>Legacy</V>
+      </A>
+    </AL>
+    <EL>
+      <E n="IO:Frames">
+        <AL>
+          <A n="FrameCount">
+            <V>3</V>
+          </A>
+        </AL>
+        <EL>
+          <E n="IO:Frame">
+            <AL>
+              <A n="FrameId">
+                <V>1.1.IN</V>
+              </A>
+              <A n="Length">
+                <V>17.0</V>
+              </A>
+              <A n="PN:FrameId">
+                <V>36864</V>
+              </A>
+              <A n="PN:Phase">
+                <V>8</V>
+              </A>
+              <A n="PN:RTClass">
+                <V>2</V>
+              </A>
+              <A n="PN:SendClock">
+                <V>32</V>
+              </A>
+              <A n="PN:ReductionRatio">
+                <V>8</V>
+              </A>
+              <A n="PN:Sequence">
+                <V>0</V>
+              </A>
+              <A n="PN:Watchdog">
+                <V>3</V>
+              </A>
+              <A n="PN:DataHold">
+                <V>3</V>
+              </A>
+            </AL>
+            <EL>
+              <E n="IO:Ports">
+                <AL>
+                  <A n="PortCount">
+                    <V>38</V>
+                  </A>
+                </AL>
+                <EL>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>ICS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOCS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>25</V>
+                      </A>
+                      <A n="Name">
+                        <V>SM_IOCS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>1.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOCS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>~IB_MASTER_REG_IN</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Octetstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>8.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring16</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>2.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_BSA</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_SYSFAIL</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.1</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_RES</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.2</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_SYNCRES</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.3</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_DCR</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.4</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_WARN</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.5</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_QUAL</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.6</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_SSINFO</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.7</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_USER</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>3.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_PF</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>3.1</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_BUS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>3.2</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_CTRL</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>3.3</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_DTC</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>3.4</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_RUN</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>3.5</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_ACT</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>3.6</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_STATUS_REG_RDY</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>3.7</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_PARAM_REG</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring16</V>
+                      </A>
+                      <A n="Offset">
+                        <V>4.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>2.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_DIAG_PARAM_2_REG</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring16</V>
+                      </A>
+                      <A n="Offset">
+                        <V>6.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>2.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_STD_FNC_STATUS_REG</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring16</V>
+                      </A>
+                      <A n="Offset">
+                        <V>8.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>2.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>SM_IOPS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>10.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOPS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>~DI8</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>IN00</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>IN01</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.1</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>IN02</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.2</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>IN03</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.3</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>IN04</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.4</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>IN05</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.5</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>IN06</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.6</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>IN07</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.7</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>SM_IOPS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>12.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOPS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>15</V>
+                      </A>
+                      <A n="Name">
+                        <V>IPS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>13.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOPS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>16</V>
+                      </A>
+                      <A n="Name">
+                        <V>SM_IOPS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>14.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOPS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>17</V>
+                      </A>
+                      <A n="Name">
+                        <V>SM_IOPS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>15.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOPS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>18</V>
+                      </A>
+                      <A n="Name">
+                        <V>SM_IOPS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>16.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOPS</V>
+                      </A>
+                    </AL>
+                  </E>
+                </EL>
+              </E>
+            </EL>
+          </E>
+          <E n="IO:Frame">
+            <AL>
+              <A n="FrameId">
+                <V>1.1.OUT</V>
+              </A>
+              <A n="Length">
+                <V>13.0</V>
+              </A>
+              <A n="PN:FrameId">
+                <V>65535</V>
+              </A>
+              <A n="PN:Phase">
+                <V>8</V>
+              </A>
+              <A n="PN:RTClass">
+                <V>2</V>
+              </A>
+              <A n="PN:SendClock">
+                <V>32</V>
+              </A>
+              <A n="PN:ReductionRatio">
+                <V>8</V>
+              </A>
+              <A n="PN:Sequence">
+                <V>0</V>
+              </A>
+              <A n="PN:Watchdog">
+                <V>3</V>
+              </A>
+              <A n="PN:DataHold">
+                <V>3</V>
+              </A>
+            </AL>
+            <EL>
+              <E n="IO:Ports">
+                <AL>
+                  <A n="PortCount">
+                    <V>15</V>
+                  </A>
+                </AL>
+                <EL>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>15</V>
+                      </A>
+                      <A n="Name">
+                        <V>OCS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOCS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>16</V>
+                      </A>
+                      <A n="Name">
+                        <V>OCS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>1.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOCS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>17</V>
+                      </A>
+                      <A n="Name">
+                        <V>OCS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>2.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOCS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>18</V>
+                      </A>
+                      <A n="Name">
+                        <V>OCS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>3.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOCS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>OCS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>4.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOCS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="Name">
+                        <V>OCS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>5.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOCS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>~IB_MASTER_REG_OUT</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring32</V>
+                      </A>
+                      <A n="Offset">
+                        <V>6.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>4.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_STD_FNC_START_REG</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring16</V>
+                      </A>
+                      <A n="Offset">
+                        <V>6.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>2.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>IB_MASTER_STD_FNC_PARAM_REG</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring16</V>
+                      </A>
+                      <A n="Offset">
+                        <V>8.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>2.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="Name">
+                        <V>OPS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>10.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOPS</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>25</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT00</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>25</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT01</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.1</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>25</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT02</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.2</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>25</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT03</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>11.3</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>DATA</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>25</V>
+                      </A>
+                      <A n="Name">
+                        <V>OPS</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>12.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                      <A n="PN:State">
+                        <V>IOPS</V>
+                      </A>
+                    </AL>
+                  </E>
+                </EL>
+              </E>
+            </EL>
+          </E>
+          <E n="IO:Frame">
+            <AL>
+              <A n="FrameId">
+                <V>1.1.IN.APDU</V>
+              </A>
+              <A n="Length">
+                <V>1.0</V>
+              </A>
+            </AL>
+            <EL>
+              <E n="IO:Ports">
+                <AL>
+                  <A n="PortCount">
+                    <V>6</V>
+                  </A>
+                </AL>
+                <EL>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>15</V>
+                      </A>
+                      <A n="Name">
+                        <V>~PN_DEVICE_STATE</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring8</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>1.0</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>15</V>
+                      </A>
+                      <A n="Name">
+                        <V>PN_IS_PRIMARY</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>15</V>
+                      </A>
+                      <A n="Name">
+                        <V>PN_AR_VALID</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.2</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>15</V>
+                      </A>
+                      <A n="Name">
+                        <V>PN_APPL_RUN</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.4</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>15</V>
+                      </A>
+                      <A n="Name">
+                        <V>PN_NO_DIAG</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.5</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>15</V>
+                      </A>
+                      <A n="Name">
+                        <V>PN_IRT_FRAME_VALID</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.7</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                </EL>
+              </E>
+            </EL>
+          </E>
+        </EL>
+      </E>
+      <E n="PN:Modules">
+        <EL>
+          <E n="PN:M:DAP">
+            <AL>
+              <A n="Slot">
+                <V>0</V>
+              </A>
+              <A n="ModuleId">
+                <V>768</V>
+              </A>
+              <A n="MultiWrite">
+                <V>false</V>
+              </A>
+              <A n="ObjectUUIDLocalIndex">
+                <V>1</V>
+              </A>
+            </AL>
+            <EL>
+              <E n="PN:Submodules">
+                <EL>
+                  <E n="PN:SM:DAP">
+                    <AL>
+                      <A n="SubSlot">
+                        <V>1</V>
+                      </A>
+                      <A n="SubmoduleId">
+                        <V>1</V>
+                      </A>
+                      <A n="NodeId">
+                        <V>15</V>
+                      </A>
+                      <A n="SharedInput">
+                        <V>Invalid</V>
+                      </A>
+                      <A n="SubmoduleType">
+                        <V>NoIO</V>
+                      </A>
+                      <A n="SubstitutionMode">
+                        <V>NullValue</V>
+                      </A>
+                      <A n="Api">
+                        <V>0</V>
+                      </A>
+                    </AL>
+                    <EL>
+                      <E n="PARAS">
+                        <EL>
+                          <E n="PARA">
+                            <AL>
+                              <A n="Index">
+                                <V>1</V>
+                              </A>
+                              <A n="TransferSequence">
+                                <V>1</V>
+                              </A>
+                              <A n="Value">
+                                <V>000000000004</V>
+                              </A>
+                            </AL>
+                          </E>
+                          <E n="PARA">
+                            <AL>
+                              <A n="Index">
+                                <V>2</V>
+                              </A>
+                              <A n="TransferSequence">
+                                <V>2</V>
+                              </A>
+                              <A n="Value">
+                                <V>000005</V>
+                              </A>
+                            </AL>
+                          </E>
+                          <E n="PARA">
+                            <AL>
+                              <A n="Index">
+                                <V>4</V>
+                              </A>
+                              <A n="TransferSequence">
+                                <V>3</V>
+                              </A>
+                              <A n="Value">
+                                <V>00</V>
+                              </A>
+                            </AL>
+                          </E>
+                          <E n="PARA">
+                            <AL>
+                              <A n="Index">
+                                <V>5</V>
+                              </A>
+                              <A n="TransferSequence">
+                                <V>4</V>
+                              </A>
+                              <A n="Value">
+                                <V>0000</V>
+                              </A>
+                            </AL>
+                          </E>
+                        </EL>
+                      </E>
+                    </EL>
+                  </E>
+                  <E n="PN:SM:IF">
+                    <AL>
+                      <A n="SubSlot">
+                        <V>32768</V>
+                      </A>
+                      <A n="SubmoduleId">
+                        <V>2</V>
+                      </A>
+                      <A n="NodeId">
+                        <V>16</V>
+                      </A>
+                      <A n="SharedInput">
+                        <V>Invalid</V>
+                      </A>
+                      <A n="SubmoduleType">
+                        <V>NoIO</V>
+                      </A>
+                      <A n="SubstitutionMode">
+                        <V>NullValue</V>
+                      </A>
+                      <A n="Api">
+                        <V>0</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="PN:SM:PORT">
+                    <AL>
+                      <A n="SubSlot">
+                        <V>32769</V>
+                      </A>
+                      <A n="SubmoduleId">
+                        <V>3</V>
+                      </A>
+                      <A n="NodeId">
+                        <V>17</V>
+                      </A>
+                      <A n="SharedInput">
+                        <V>Invalid</V>
+                      </A>
+                      <A n="SubmoduleType">
+                        <V>NoIO</V>
+                      </A>
+                      <A n="SubstitutionMode">
+                        <V>NullValue</V>
+                      </A>
+                      <A n="Api">
+                        <V>0</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="PN:SM:PORT">
+                    <AL>
+                      <A n="SubSlot">
+                        <V>32770</V>
+                      </A>
+                      <A n="SubmoduleId">
+                        <V>3</V>
+                      </A>
+                      <A n="NodeId">
+                        <V>18</V>
+                      </A>
+                      <A n="SharedInput">
+                        <V>Invalid</V>
+                      </A>
+                      <A n="SubmoduleType">
+                        <V>NoIO</V>
+                      </A>
+                      <A n="SubstitutionMode">
+                        <V>NullValue</V>
+                      </A>
+                      <A n="Api">
+                        <V>0</V>
+                      </A>
+                    </AL>
+                  </E>
+                </EL>
+              </E>
+            </EL>
+          </E>
+          <E n="PN:M">
+            <AL>
+              <A n="Slot">
+                <V>1</V>
+              </A>
+              <A n="ModuleId">
+                <V>1</V>
+              </A>
+            </AL>
+            <EL>
+              <E n="PN:Submodules">
+                <EL>
+                  <E n="PN:SM">
+                    <AL>
+                      <A n="SubSlot">
+                        <V>1</V>
+                      </A>
+                      <A n="SubmoduleId">
+                        <V>1</V>
+                      </A>
+                      <A n="NodeId">
+                        <V>23</V>
+                      </A>
+                      <A n="SharedInput">
+                        <V>NoSharedInput</V>
+                      </A>
+                      <A n="SubmoduleType">
+                        <V>IO</V>
+                      </A>
+                      <A n="SubstitutionMode">
+                        <V>NullValue</V>
+                      </A>
+                      <A n="Api">
+                        <V>0</V>
+                      </A>
+                    </AL>
+                  </E>
+                </EL>
+              </E>
+            </EL>
+          </E>
+          <E n="PN:M">
+            <AL>
+              <A n="Slot">
+                <V>2</V>
+              </A>
+              <A n="ModuleId">
+                <V>16829</V>
+              </A>
+            </AL>
+            <EL>
+              <E n="PN:Submodules">
+                <EL>
+                  <E n="PN:SM">
+                    <AL>
+                      <A n="SubSlot">
+                        <V>1</V>
+                      </A>
+                      <A n="SubmoduleId">
+                        <V>1</V>
+                      </A>
+                      <A n="NodeId">
+                        <V>25</V>
+                      </A>
+                      <A n="SharedInput">
+                        <V>Invalid</V>
+                      </A>
+                      <A n="SubmoduleType">
+                        <V>Output</V>
+                      </A>
+                      <A n="SubstitutionMode">
+                        <V>NullValue</V>
+                      </A>
+                      <A n="Api">
+                        <V>0</V>
+                      </A>
+                    </AL>
+                    <EL>
+                      <E n="PARAS">
+                        <EL>
+                          <E n="PARA">
+                            <AL>
+                              <A n="Index">
+                                <V>28672</V>
+                              </A>
+                              <A n="TransferSequence">
+                                <V>1</V>
+                              </A>
+                              <A n="Value">
+                                <V>BD000400FFFF00</V>
+                              </A>
+                            </AL>
+                          </E>
+                        </EL>
+                      </E>
+                    </EL>
+                  </E>
+                </EL>
+              </E>
+            </EL>
+          </E>
+          <E n="PN:M">
+            <AL>
+              <A n="Slot">
+                <V>3</V>
+              </A>
+              <A n="ModuleId">
+                <V>33214</V>
+              </A>
+            </AL>
+            <EL>
+              <E n="PN:Submodules">
+                <EL>
+                  <E n="PN:SM">
+                    <AL>
+                      <A n="SubSlot">
+                        <V>1</V>
+                      </A>
+                      <A n="SubmoduleId">
+                        <V>1</V>
+                      </A>
+                      <A n="NodeId">
+                        <V>27</V>
+                      </A>
+                      <A n="SharedInput">
+                        <V>NoSharedInput</V>
+                      </A>
+                      <A n="SubmoduleType">
+                        <V>Input</V>
+                      </A>
+                      <A n="SubstitutionMode">
+                        <V>NullValue</V>
+                      </A>
+                      <A n="Api">
+                        <V>0</V>
+                      </A>
+                    </AL>
+                    <EL>
+                      <E n="PARAS">
+                        <EL>
+                          <E n="PARA">
+                            <AL>
+                              <A n="Index">
+                                <V>28672</V>
+                              </A>
+                              <A n="TransferSequence">
+                                <V>1</V>
+                              </A>
+                              <A n="Value">
+                                <V>BE000800FFFF00</V>
+                              </A>
+                            </AL>
+                          </E>
+                        </EL>
+                      </E>
+                    </EL>
+                  </E>
+                </EL>
+              </E>
+            </EL>
+          </E>
+        </EL>
+      </E>
+    </EL>
+  </E>
+</TIC>

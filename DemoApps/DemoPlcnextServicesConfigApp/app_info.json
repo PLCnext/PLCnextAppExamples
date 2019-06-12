@@ -1,0 +1,17 @@
+{
+    "plcnextapp": {
+        "name": "Services Config App",
+        "identifier": "SC_WBM-MNH",
+        "version": "1.001",
+        "target": "AXC F 2152",
+        "minfirmware_version": "19.0.0",
+        "manufacturer": "PhoenixContact"
+    },
+    "plcnextservices" :
+    [
+        {
+            "service" : "WBM",
+            "action"  : "MUST_NOT_HAVE"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+{"$schema":"http:\/\/json-schema.org\/draft-0\/schema#","title":"DataDictionary","HmiVariables2":{"Arp.Plc.Eclr/PLC_SYS_TICK_CNT":{"Type":"DINT","ReadOnly":true},"Arp.Plc.Eclr/AXIO_AXL_F_DO16_DO01":{"Type":"BOOL"}}}
