@@ -22,6 +22,7 @@ For the full documentation about the procedure for creating PLCnext apps and the
 | 6 | PLCnext Extensions | Extensions of the PLCnext runtime can be integrated into a PLCnext system in the form of an app. With a PLCnext extension, the PLCnext runtime can be extended by the following elements: <ul><li> A process dependent on the PLCnext runtime (PLCnext process) </li><li> A PLCnext shared library (PLCnext library). Usually it belongs to a PLCnext component </li><li> A PLCnext component (PLCnext component) </li><ul> | Optional |
 | 7 | Configuration of the PLCnext Runtime services | PLCnext system services can be enabled/disabled with this app part | Optional |
 | 8 | File- / Data-Storage | When necessary, it is used to specify whether a persistent and/or temporary location is required for the App | Optional |
+| 9 | Update Configurations | Used to enable auto update mode, keep Apps persistent/temporary data on update or to run an update shell script after installing the new app version | Optional |
 
 The following shows the contents of an app description file in which all types of app parts are configured by way of example:
 
@@ -101,11 +102,11 @@ The following shows the contents of an app description file in which all types o
        }
     ],
     "updateconfigs": {
-        "autoupdate_enabled": true,
-        "keep_persistentdata": true,
-        "keep_temporarydata" : false,
-        "post_updatescript": "<Path to app update script>"
-     }
+        "autoupdate_enabled": true,
+        "keep_persistentdata": true,
+        "keep_temporarydata" : false,
+        "post_updatescript": "<Path to app update script>"
+    }
 }
 
 ```
