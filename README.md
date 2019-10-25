@@ -28,7 +28,6 @@ The following shows the contents of an app description file in which all types o
 
 ```json
 {
-    {
     "plcnextapp": {
         "name": "Full Multipat App",
         "identifier": "00000000000000",
