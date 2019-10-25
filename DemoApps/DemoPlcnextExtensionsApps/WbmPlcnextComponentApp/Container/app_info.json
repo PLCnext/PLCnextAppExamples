@@ -1,0 +1,21 @@
+{
+    "plcnextapp": {
+        "name": "PLCnext WBM",
+        "identifier": "10000010000003",
+        "version": "22.10.1 alpha", 
+        "target": "AXC F 2152", 
+        "minfirmware_version": "19.9.0", 
+        "manufacturer": "PhoenixContact", 
+        "licensetype" : "Free"
+    },
+    "datastorage": {
+        "persistentdata": true,
+        "temporarydata" : false
+    },
+    "plcnextextensions" :
+    [
+        {
+            "acfconfigpath": "/wbm/WbmComponent.acf.config"
+        }
+    ]
+}

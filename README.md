@@ -10,7 +10,7 @@ This repository contains documentation for creating PLCnext app containers as we
 
 ## PLCnext App-Parts
 
-For the full documentation about the procedure for creating PLCnext apps and their packaging in the corresponding app container see the "PLCnext Technology - PLCnext App Integration Guide" in the [PLCnext Store Tutorials](https://www.plcnext-community.net/index.php?option=com_content&view=category&layout=blog&id=90&Itemid=511&lang=en  "PLCnext Store Tutorials"). A PLCnext App must contain a Metadata-App-part and at least one optional App-part.
+For the full documentation about the procedure for creating PLCnext apps and their packaging in the corresponding app container see the "PLCnext Technology - PLCnext App Integration Guide" on the PLCnext Community site ([Link to PLCnext App Integration Guide](http://plcnext-app-integration-guide.s3-website.eu-central-1.amazonaws.com/)). A PLCnext App must contain a Metadata-App-part and at least one optional App-part.
 
 | # | App-Part | Description | Type |
 | ------ | ------ | ------ | ------ |
@@ -27,13 +27,15 @@ The following shows the contents of an app description file in which all types o
 
 ```json
 {
+    {
     "plcnextapp": {
         "name": "Full Multipat App",
-        "identifier": "FullMultipartApp",
-        "version": "112.12DemoVersion",
+        "identifier": "00000000000000",
+        "version": "Full 20.0 (112.12 DemoVersion)",
         "target": "AXC F 2152",
-        "minfirmware_version": "19.0.0",
-        "manufacturer":"Phoenix Contact"
+        "minfirmware_version": "20.0.0",
+        "manufacturer":"Phoenix Contact",
+        "licensetype":"Full"
     },
     "engineerapp": {
         "folder": "/arp/PCWE"
@@ -60,12 +62,12 @@ The following shows the contents of an app description file in which all types o
     [
         {
           "path"     : "/bin/daemon1exe", 
-          "cmdargs"  : "arg1  arg2 … argN",
+          "cmdargs"  : "arg1  arg2 ... argN",
           "starttime": "40"
         },
         {
           "path"     : "<Path to daemon executable binary>", 
-          "cmdargs"  : "<arg1  arg2 … argN>",
+          "cmdargs"  : "<arg1  arg2 ... argN>",
           "starttime": "99",
           "initScriptTemplate":"<Path to own template file>"
         }
@@ -97,7 +99,13 @@ The following shows the contents of an app description file in which all types o
            "service" : "OPCUA",
            "action"  : "MUST_NOT_HAVE"
        }
-    ]
+    ],
+    "updateconfigs": {
+        "autoupdate_enabled": true,
+        "keep_persistentdata": true,
+        "keep_temporarydata" : false,
+        "post_updatescript": "<Path to app update script>"
+     }
 }
 
 ```
@@ -111,6 +119,7 @@ This table describes the demo app examples in the git project folder DemoApps
 | 2 | Command Line Tool App | To demonstrate an app with a CmdTool App-Part a simple tool was developed, which is installed in an app and displays a text message on the console when called from the command line | [DemoEngineerApp](/DemoApps/DemoEngineerApp/) |
 | 3 | Linux shared library App | n/a yet | n/a |
 | 4 | Linux daemon App | In the SampleLinuxDaemon app the simple program "SampleLinuxDaemon" is started as a Linux daemon, which permanently reads the current time stamp in an endless loop every second and writes it into a log file linuxDaemonOut.log. | [SampleLinuxDaemonApp](/DemoApps/SampleLinuxDaemonApp/) |
-| 5 | PLCnext Extensions App | Contains two examples for PLCnext Extensions Apps: <ul><li>Demo PLCnext Runtime App (PLCnext-Process) based on the example in the PLCnext Github Repo [SampleRuntime](https://github.com/PLCnext/SampleRuntime) </li><li>Demo PLCnext-Component App</li></ul> | [PlcnextSampleRuntimeApp](/DemoApps/PlcnextSampleRuntimeApp/) [WbmPlcnextComponentApp](/DemoApps/WbmPlcnextComponentApp/)|
+| 5 | PLCnext Extensions App | Contains two examples for PLCnext Extensions Apps: <ul><li>Demo PLCnext Runtime App (PLCnext-Process) based on the example in the PLCnext Github Repo [SampleRuntime](https://github.com/PLCnext/SampleRuntime) </li><li>Demo PLCnext-Component App</li></ul> | [PlcnextSampleRuntimeApp](/DemoApps/DemoPlcnextExtensionsApps/PlcnextSampleRuntimeApp/) [WbmPlcnextComponentApp](/DemoApps/DemoPlcnextExtensionsApps/WbmPlcnextComponentApp/)|
 | 6 | PLCnext services configuration App | In the demo app for configuring PLCnext system services, the WBM-PLCnext component is switched off. For this the action "MUST_NOT_HAVE" is configured for the Plcnext service with the ID "WBM", therefore the name "SC_WBM-MNH" is selected for the app. | [DemoPlcnextServicesConfigApp](/DemoApps/DemoPlcnextServicesConfigApp/) |
-| 7 | Data Storage | The procedure for using and configuring a Data Storage App Part is explained in the demo apps "Demo PLCnext Runtime App" and "Demo Linux Daemon App" | [PlcnextSampleRuntimeApp](/DemoApps/PlcnextSampleRuntimeApp/)  [SampleLinuxDaemonApp](/DemoApps/SampleLinuxDaemonApp/) |
+| 7 | Data Storage | The procedure for using and configuring a Data Storage App Part is explained in the demo apps "Demo PLCnext Runtime App" and "Demo Linux Daemon App" | [PlcnextSampleRuntimeApp](/DemoApps/DemoPlcnextExtensionsApps/PlcnextSampleRuntimeApp/)  [SampleLinuxDaemonApp](/DemoApps/SampleLinuxDaemonApp/) |
+| 8 | Update configs | The update configs demo App contains an App container to update demo App [SampleLinuxDaemonApp](/DemoApps/SampleLinuxDaemonApp/) from app version 123.11.6.0 to 123.11.6.9 | [SampleLinuxDaemonUpdateApp](/DemoApps/SampleLinuxDaemonUpdateApp/) |

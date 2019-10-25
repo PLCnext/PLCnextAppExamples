@@ -1,0 +1,23 @@
+{
+    "plcnextapp": {
+        "name": "Plcnext Sample Runtime Extension App",
+        "identifier": "60000102000196",
+        "version": "1.0",
+        "target": "AXC F 2152",
+        "minfirmware_version": "19.3.0",
+        "manufacturer": "PhoenixContact"
+    },
+    "engineerapp": {
+        "folder": "/arp/PCWE/"
+    },
+    "datastorage": {
+        "persistentdata": true,
+        "temporarydata" : true
+    },
+    "plcnextextensions" :
+    [
+        {
+            "acfconfigpath": "/SampleRuntime/PLCnextSampleRuntime.acf.config"
+        }
+    ]
+}

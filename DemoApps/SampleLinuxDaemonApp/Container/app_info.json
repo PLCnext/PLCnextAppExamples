@@ -1,0 +1,22 @@
+{
+    "plcnextapp": {
+        "name": "Sample Linux Daemon App",
+        "identifier": "60023450000002",
+        "version": "123.11.6.0",
+        "target": "AXC F 2152",
+        "minfirmware_version": "19.3.0",
+        "manufacturer": "PhoenixContact"
+    },
+    "datastorage": {
+        "persistentdata": true,
+        "temporarydata" : true
+    },
+    "linuxdaemons" :
+    [
+        {
+          "path" : "/bin/SampleLinuxDaemon",
+          "cmdargs" : "",
+          "starttime": "99"
+        }
+    ]
+}

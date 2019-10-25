@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TIC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.phoenixcontact.com/IMA/TIC/1.0/tic.xsd">
+  <E n="AXLF:Controller">
+    <AL>
+      <A n="DeviceCount">
+        <V>1</V>
+      </A>
+      <A n="FrameReference">
+        <V>0001</V>
+      </A>
+      <A n="CycleTime">
+        <V>0</V>
+      </A>
+      <A n="ChangeTime">
+        <V>0</V>
+      </A>
+      <A n="InDelay">
+        <V>0</V>
+      </A>
+      <A n="OutDelay">
+        <V>0</V>
+      </A>
+    </AL>
+    <EL>
+      <E n="IO:Frames">
+        <AL>
+          <A n="FrameCount">
+            <V>2</V>
+          </A>
+        </AL>
+        <EL>
+          <E n="IO:Frame">
+            <AL>
+              <A n="FrameId">
+                <V>1:IN</V>
+              </A>
+              <A n="Length">
+                <V>1024</V>
+              </A>
+            </AL>
+            <EL>
+              <E n="IO:Ports">
+                <AL>
+                  <A n="PortCount">
+                    <V>0</V>
+                  </A>
+                </AL>
+              </E>
+            </EL>
+          </E>
+          <E n="IO:Frame">
+            <AL>
+              <A n="FrameId">
+                <V>1:OUT</V>
+              </A>
+              <A n="Length">
+                <V>1024</V>
+              </A>
+            </AL>
+            <EL>
+              <E n="IO:Ports">
+                <AL>
+                  <A n="PortCount">
+                    <V>17</V>
+                  </A>
+                </AL>
+                <EL>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>~DO16</V>
+                      </A>
+                      <A n="DataType">
+                        <V>Bitstring16</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>2.0</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT00</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT01</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.1</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT02</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.2</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT03</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.3</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT04</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.4</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT05</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.5</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT06</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.6</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT07</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>0.7</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT08</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>1.0</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT09</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>1.1</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT10</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>1.2</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT11</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>1.3</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT12</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>1.4</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT13</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>1.5</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT14</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>1.6</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                  <E n="IO:Port">
+                    <AL>
+                      <A n="NodeId">
+                        <V>0</V>
+                      </A>
+                      <A n="Name">
+                        <V>OUT15</V>
+                      </A>
+                      <A n="DataType">
+                        <V>BOOL</V>
+                      </A>
+                      <A n="Offset">
+                        <V>1.7</V>
+                      </A>
+                      <A n="Length">
+                        <V>0.1</V>
+                      </A>
+                    </AL>
+                  </E>
+                </EL>
+              </E>
+            </EL>
+          </E>
+        </EL>
+      </E>
+    </EL>
+  </E>
+</TIC>

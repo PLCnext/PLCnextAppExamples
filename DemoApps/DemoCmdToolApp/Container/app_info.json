@@ -1,0 +1,17 @@
+{
+    "plcnextapp": {
+        "name": "Demo Cmd Tools App",
+        "identifier": "00000001111111",
+        "version": "10.1.0 beta",
+        "target": "AXC F 2152",
+        "minfirmware_version": "19.9.0",
+        "manufacturer": "Phoenix Contact",
+        "licensetype":"Free"
+    },
+    "cmdtools":
+    [
+       {
+         "path" : "/bin/DemoCmdTool"
+       }
+    ]
+}

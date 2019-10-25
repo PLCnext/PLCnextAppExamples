@@ -1,0 +1,67 @@
+﻿
+html { 
+    -webkit-text-size-adjust: none;
+}
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+body {
+    color: white; 
+    font-family: sans-serif;
+    font-size: 24px;
+    background-color: #1e2326;
+    overflow: hidden; 
+}
+
+#knobsPanel {
+    visibility: hidden;
+    position: fixed;
+    color: black; 
+    top: 0px;
+    right: 0px;
+    background-color: #E0E0E0;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    margin: 2px 5px;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+#frontCanvas {
+    visibility: visible;
+    background-color: #000000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: default;
+    touch-action: none;
+}
+
+.messageBox {
+
+    position: fixed;
+    border: 1px solid #171b1d;
+    color: white; 
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #1e2326;
+    border-radius: 10px;
+    -moz-box-shadow: 0px 0px 16px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 16px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 16px rgba(0,0,0,0.5);
+    overflow:hidden;
+
+}
+
+.reloadButton {
+    font-size: 20px;
+    background-color: rgba(0,0,0,0);
+    color: #C0C0C0;
+    border: solid;
+    border-color: #808080;
+    border-width: 1px;  
+}

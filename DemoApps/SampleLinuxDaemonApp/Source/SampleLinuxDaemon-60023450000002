@@ -1,0 +1,80 @@
+#!/bin/sh
+
+NAME="SampleLinuxDaemon"
+echo "name = $NAME"
+DESCRIPTION="App "
+# Path to Daemon binary
+DAEMON="/opt/plcnext/apps/SampleLinuxDaemon/bin/SampleLinuxDaemon"
+DAEMON_ARGS=""
+
+# Exit if Daemon binary is not installed or has no execution permissions
+if ! [ -x $DAEMON ]
+then
+ if [ -e $DAEMON ]
+ then 
+    echo " Error - Daemon file $DAEMON  has no execute permission. Exit"
+ else
+    echo " Error - Daemon file $DAEMON  not found. Exit"
+ fi
+ exit 0 
+fi
+# Read configuration variable file if it is present
+[ -r /etc/default/$NAME ] && . /etc/default/$NAME
+
+# Starting Daemon <NAME> <DAEMON_ARGS>
+dm_start()
+{
+    start-stop-daemon --start --quiet --exec $DAEMON -- $DAEMON_ARGS & 
+}
+
+# Stopping Daemon <NAME> <DAEMON_ARGS>
+dm_stop()
+{
+    DAEMON_PID=$(pidof ${DAEMON})
+    echo "PID of $DAEMON = " ${DAEMON_PID}
+    
+    start-stop-daemon --stop --quiet --retry=TERM/30/KILL/5 --exec $DAEMON &
+
+    start-stop-daemon --stop --quiet --oknodo --retry=0/30/KILL/5 --exec $DAEMON &
+    
+    TIMEOUT_COUNTER=0
+    TIMEOUT=3
+    while [ ! -z "$DAEMON_PID" -a $TIMEOUT_COUNTER -lt $TIMEOUT ]; do
+        sleep 1;
+        TIMEOUT_COUNTER=$[$TIMEOUT_COUNTER + 1]
+    done
+}
+
+# Sending a SIGHUP signal to Daemon <NAME> <DAEMON_ARGS>
+dm_reload() {
+    start-stop-daemon --stop --signal 1 --quiet --name $NAME &
+}
+
+case "$1" in
+
+    start)
+        echo "Starting $DESCRIPTION " "$NAME"
+        dm_start
+        echo "$NAME" " daemon started"
+        ;;
+
+    stop)
+        echo "Stopping $DESCRIPTION" "$NAME"
+        dm_stop
+        echo "$NAME" " daemon stopped"
+        ;;
+
+
+    restart)
+        echo "Restarting $DESCRIPTION" "$NAME"
+        dm_stop
+        dm_start
+        echo "$NAME" " daemon started" 
+        ;;
+    *)
+        echo "Usage: /etc/init.d/$NAME {start|stop|restart}" >&2
+        
+        
+esac
+
+
