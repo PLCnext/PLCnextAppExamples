@@ -29,7 +29,7 @@ The following shows the contents of an app description file in which all types o
 ```json
 {
     "plcnextapp": {
-        "name": "Full Multipat App",
+        "name": "Full Multipart App",
         "identifier": "00000000000000",
         "version": "Full 20.0 (112.12 DemoVersion)",
         "target": "AXC F 2152",
