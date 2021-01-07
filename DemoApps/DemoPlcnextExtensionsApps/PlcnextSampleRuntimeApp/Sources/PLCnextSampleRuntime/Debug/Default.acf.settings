@@ -10,7 +10,7 @@
   <LogSettings logLevel="Debug" logDir="Logs" />
 
   <EnvironmentVariables>
-    <EnvironmentVariable name="ARP_BINARY_DIR" value="/usr/lib" /> <!-- Directory of PLCnext binaries -->
+    <EnvironmentVariable name="ARP_PATH_BINARY_DIR" value="/usr/lib" /> <!-- Directory of PLCnext binaries -->
   </EnvironmentVariables>
 
 </AcfSettingsDocument>

@@ -8,10 +8,10 @@
   <RscSettings path="$ARP_SYSTEM_DIR$/System/Settings/Rsc.settings"/>
   
   <!--<App Identifier>: Replace with the App Identifier -->
-  <LogSettings logLevel="Debug" logDir="$ARP_APPS_DATA_DIR$/<App Identifier>/Logs" />
+  <LogSettings logLevel="Debug" logDir="$ARP_PATH_APPS_DATA_DIR$/<App Identifier>/Logs" />
 
   <EnvironmentVariables>
-    <EnvironmentVariable name="ARP_BINARY_DIR" value="/usr/lib" /> <!-- Directory of PLCnext binaries -->
+    <EnvironmentVariable name="ARP_PATH_SYSTEM_DIR" value="/usr/lib" /> <!-- Directory of PLCnext binaries -->
   </EnvironmentVariables>
 
 </AcfSettingsDocument>

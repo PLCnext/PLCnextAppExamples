@@ -5,12 +5,10 @@
   xsi:schemaLocation="http://www.phoenixcontact.com/schema/acfsettings.xsd"
   schemaVersion="1.0" >
   
-  <RscSettings path="/etc/plcnext/device/System/Rsc/Rsc.settings"/>
-  
-  <LogSettings logLevel="Debug" logDir="/opt/plcnext/appshome/data/60000102000196/Log"/>
+  <LogSettings logLevel="Debug" logDir="$ARP_PATH_APPS_DATA_DIR$/60000102000196/Log"/>
 
   <EnvironmentVariables>
-    <EnvironmentVariable name="ARP_BINARY_DIR" value="/usr/lib" /> <!-- Directory of PLCnext binaries -->
+    <EnvironmentVariable name="ARP_PATH_BINARY_DIR" value="/usr/lib" /> <!-- Directory of PLCnext binaries -->
   </EnvironmentVariables>
 
 </AcfSettingsDocument>
